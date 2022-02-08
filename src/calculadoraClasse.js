@@ -117,6 +117,7 @@ function CreateButtons ()
         {r:"*", v: x => { calc.setOperation("multiplicação"); UpdateVisor(); }},
         {r:"=", v: x => { visor.innerText = calc.getResult(); }},
     ];
+    
     buttons.forEach(button => {
         const li = document.createElement("li");
         li.innerText = button.r;
